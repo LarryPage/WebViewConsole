@@ -13,3 +13,7 @@ WebViewConsole is an In-App debug console for your UIWebView
 3.WebViewConsole<br>
 可调用HyBird,Scheme,js<br>
 
+
+## License
+
+AutoParser is released under the MIT license. See LICENSE for details.
