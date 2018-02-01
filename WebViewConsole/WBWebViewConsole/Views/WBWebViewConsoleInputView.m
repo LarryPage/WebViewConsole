@@ -154,6 +154,11 @@ NSUInteger const WBWebViewConsoleInputMaxHistorySize = 30;
 - (void)commitCurrentCommand
 {
     NSString * command = _textView.text;
+    //modify by lxc at 20180201 替换特除单引号和双引号
+    command = [command stringByReplacingOccurrencesOfString:@"‘" withString:@"'"];
+    command = [command stringByReplacingOccurrencesOfString:@"’" withString:@"'"];
+    command = [command stringByReplacingOccurrencesOfString:@"“" withString:@"\""];
+    command = [command stringByReplacingOccurrencesOfString:@"”" withString:@"\""];
     
     if (![command stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].length) return;
     
