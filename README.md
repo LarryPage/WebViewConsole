@@ -16,4 +16,6 @@ WebViewConsole is an In-App debug console for your UIWebView
 
 ## License
 
-AutoParser is released under the MIT license. See LICENSE for details.
+WebViewConsole is released under the MIT license. See LICENSE for details.
+
+
